@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+p{
+    font: 15px sans-serif;
+}
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="index.html" class="button">Visualization</a> <a href="documentation.html" class="button">Video Demo</a>
+
+<h1>Documentation for Final Project</h1>
+<div class="wrapper">
+<p>
+<h2>Design Process:</h2>
+    &nbsp &nbsp &nbsp For designing my visualization I need to find a data set that interested <br>me. I found a data set of movie ratings based on
+    IMDB's ratings. Looking at<br> the data set I wanted to show the top rated movies in the data set. Creating a <br> bar chart was my
+    idea moving forward. Designing the visualization I needed <br> to gather the top 10 rated movies and display them on a bar chart.<br><br><br>
+
+    &nbsp &nbsp &nbsp The initial design process, I wanted to show the movie details when a <br> user hovered over the bar column. I wanted users to be
+    able to access the <br> information of each movie in the bar chart. I wanted to display the Title, Rating,<br> Genre and Release Year.
+    I came up with a design when they hovered <br>over they would see the information to the right of it. I played around with the<br> visualization
+    on my HTML page and ran into some problems. The big problem <br>I as running into was that the information was not displaying like I wanted it.
+    I <br>could not get anything other than the title to display, once I added more <br>elements such as the release year nothing would display once hovering
+    over a <br>bar column. This problem meant I needed to figure out how to fix the bugs or <br>come up with a different solution. After hours on hours fiddling
+    around with the <br>code, I finally started looking for alternatives. After searching around for possible <br>solutions I decided to go with making a
+    D3 tooltip function. Creating a tooltip <br>allowed me to display information and messages when a user hovered over a<br> column.
+    I used this tooltip found on D3's website as reference when building mine.<br> It allowed me to add however many attribute from the data set as I wanted.
+    After <br>further investigation on how many attributes to include I came to the conclusion to <br>only have the original plan as stated before. I went ahead
+    and added the title, <br>rating, release year, and genre of each movie.
+
+    <br><br><br>Below picture is the initial design of my visualization:
+
+
+
+    <h2>Rationale:</h2>
+    &nbsp &nbsp &nbsp For the rationale behind the visualization, I decide to keep all the colors of the charts the same color. I went with a blue color.
+    The reason I kept all the bars the same color was so I didn't have to have colors coordinated for each movie. This eliminated the need for a legend
+    and having various colors clash for possible colorblind users. Instead I opted into having each bar labeled by the title of the movie.
+    This allowed users to see which bar was which instead of having to match color together. I decided to arrange the chart from the highest rating to
+    the lowest rating. This also could help users see which is higher a lot quicker than if the bars were randomly put on the axis. Now users could see
+    that the far left is the higher rated movies while the further right you go on the chart the ratings starts to decrease.
+</p>
+</div>
+</body>
+</html>
